@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* 初期スタイル調整 */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* body全体の初期スタイル調整 */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+  color: #111;
+  background-color: #eff9fd;
+}
+
+/* 各要素の初期スタイル調整 */
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+a {
+  color: #032559;
+  text-decoration: none;
+}
+a:hover {
+  color: #032559;
+  text-decoration: underline;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+ul {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+/* ---------- 初期スタイル調整 ここまで ---------- */
+
+/* --------------------------------------------------
+  共通部分のスタイル指定
+-------------------------------------------------- */
+/* ヘッダー */
+.header {
+  
+  /* メニューボタンの絶対配置の基準となる */
+  padding: 15px 0 0;
+  background-color: #fff;
+}
+/* ロゴ */
+.logo {
+  width: 140px;
+  margin: 0 auto;
+  /* 左右中央揃えに配置 */
+  padding-bottom: 5px;
+}
+/* ナビゲーション用チェックボックス */
+/* --------------------
+  チェックボックスでメニュー項目の表示／非表示を切り替える。
+  ブラウザ上にはチェックボックスを表示したくないため、
+  「display: none;」で非表示にしている。
+  -------------------- */
+.nav-toggle {
+  
+}
+/* ハンバーガーボタン */
+.btn-burger {
+  
+  /* 親要素（.header）を基準に絶対配置 */
+  top: 5px;
+  right: 10px;
+  z-index: 2;
+  /* ボックスの重なりの優先順位を指定。数値が大きいほど、手前（上）に配置される */
+  display: block;
+  /* ブロックレベル性質になるため、幅・高さを指定できる */
+  width: 44px;
+  height: 44px;
+  background: url("../img/burger.svg") center center / 35px 20px no-repeat;
+  /* ハンバーガーボタンの画像を指定 */
+  cursor: pointer;
+  /* カーソルの形状を指定 */
+}
+/* メニューが開いたときの、ハンバーガーボタンの画像を指定 */
+.nav-toggle:checked~.btn-burger {
+  
+}
+/* ナビゲーション */
+.nav {
+  padding-top: 10px;
+  background: url("../img/nav_bg.png") center center / cover no-repeat;
+}
+.nav-list {
+  
+  /* 最初はメニュー（ul要素）を非表示にしておく指定 */
+  margin: 0;
+  padding-bottom: 10px;
+}
+.nav-list li {
+  margin: 0;
+  padding: 10px;
+}
+.nav-list a {
+  display: block;
+  /* ブロックレベルで扱い、縦並びに表示している */
+  color: #fff;
+}
+/* メニューが開いたとき、<ul>を表示する */
+.nav-toggle:checked~.nav .nav-list {
+  
+}
+/* ----------ナビゲーションのスタイル指定 ここまで---------- */
+
+/* セクション */
+.section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+/* 見出し（h2） */
+.heading-section {
+  text-align: center;
+}
+/* トップページ横並び要素の見出し（h3） */
+.heading-topic {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #032559;
+}
+/* フッター全体 */
+.footer {
+  padding: 40px 0 30px;
+  color: #032559;
+  text-align: center;
+  background: url("../img/footer_bg.png") center center / cover no-repeat;
+  /* 背景画像の指定 */
+}
+/* フッターロゴ */
+.footer-logo {
+  margin-bottom: 10px;
+}
+/* 連絡先 */
+.footer-address {
+  margin: 10px 0;
+}
+/* SNSのリンクボタン */
+.footer-sns {
+  margin: 20px 0;
+  text-align: center;
+  /* 中身を左右中央揃えで配置 */
+}
+.footer-sns a {
+  display: inline-block;
+  /* インラインの性質を保ちながら、ブロックレベルの性質を加えている。 */
+  margin: 0 5px;
+}
+.footer-sns img {
+  vertical-align: middle;
+  /* 垂直方向中央揃えで配置*/
+}
+/* コピーライト */
+.copyright {
+  margin: 0;
+}
+.copyright small {
+  font-size: 11px;
+}
+
+/* --------------------------------------------------
+  トップページ
+-------------------------------------------------- */
+/* メインイメージ */
+.top {
+    height: 200px;
+  margin-bottom: 50px;
+  background: url("../img/top.jpg") center bottom / cover no-repeat;
+}
+/* 横並び要素（幅768px未満では縦並びで配置される） */
+.col {
+  max-width: 300px;
+  margin: 0 auto 50px;
+}
+.col-image {
+  margin-bottom: 10px;
+}
+.col p {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------
+  営業案内
+-------------------------------------------------- */
+/* 営業時間 */
+.open-time {
+  text-align: center;
+}
+.open-time-list {
+  display: inline-block;
+  margin: 0 0 0 30px;
+  list-style: disc;
+  text-align: left;
+}
+/* 入場料（テーブル） */
+/* テーブル全体への指定 */
+.price-table {
+  
+  
+  /* テーブルの境界線が重ねて表示する */
+  
+}
+/* <thead>に対する指定 */
+
+  
+  
+
+/* <th>と<td>に対する指定 */
+
+  
+  
+  
+
+/* <tbody>内の<th>に対する指定 */
+
+  
+  
+
+/* <tbody>内の<td>に対する指定 */
+
+  
+
+
+/* --------------------------------------------------
+  お問い合わせフォーム
+-------------------------------------------------- */
+/* フォームの3つのブロックに対する指定 */
+.form-group {
+  
+}
+/* 項目名に対する指定 */
+.form-label {
+  
+  
+  
+}
+/* 送信ボタンを囲む<div>に対する指定 */
+.form-btn {
+  
+  
+}
+/* 入力欄に対する指定 */
+
+  
+  
+  
+
+/* 入力欄が:focus（入力状態）のとき */
+
+  
+  
+
+/* 送信ボタン */
+
+  
+  
+  
+
+/* 送信ボタンが:hoverのとき */
+
+  
+
+/* --------------------------------------------------
+  幅768px未満のスタイル指定 ここまで
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+  幅768px以上のスタイル指定 ここから
+-------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  /* ヘッダー */
+  .header {
+    
+  }
+  /* ロゴ */
+  .logo {
+    
+    
+    
+    
+  }
+  /* ハンバーガーボタン */
+  .btn-burger {
+    
+    /* 768px以上では使用しない */
+  }
+  /* ナビゲーション */
+  .nav {
+    padding: 40px 0;
+  }
+  .nav-list {
+    /* flexbox（横並びにする要素の親に指定） */
+    
+    /* フレックスアイテムを主軸方向（横方向）中央揃えで配置 */
+    
+    /* フレックスアイテムを交差軸方向（縦方向）中央揃えで配置 */
+    
+    padding: 0;
+  }
+  .nav-list li {
+    /* フレックスアイテムに対する指定 */
+    
+    padding: 0 20px;
+    line-height: 1;
+    border-right: 1px solid #fff;
+    /* 縦棒を表示 */
+  }
+  .nav-list li:first-child {
+    border-left: 1px solid #fff;
+    /* 縦棒を表示 */
+  }
+  /* 幅768px未満でメニューを開いた状態から、ウィンドウ幅を768px以上に広げたとき、メニューにflexboxを適用して<li>を横並び表示に切り替える */
+  .nav-toggle:checked~.nav .nav-list {
+    
+  }
+  /* セクション */
+  .section {
+    margin-bottom: 100px;
+  }
+  /* 見出し（h2） */
+  .heading-section {
+    margin-bottom: 50px;
+  }
+  /* フッター */
+  .footer {
+    padding: 50px 0 20px;
+  }
+  .footer-sns {
+    margin: 30px 0;
+  }
+  /* --------------------------------------------------
+  トップページ
+  -------------------------------------------------- */
+  /* メインイメージ */
+  .top {
+    height: 378px;
+    margin-bottom: 70px;
+  }
+  /* 横並び */
+  .row {
+    /* flexbox（横並びにする要素の親に指定） */
+     
+    
+  }
+  /* 横並び要素 */
+  .col {
+    /* フレックスアイテムに対する指定 */
+    
+    margin: 0;
+  }
+  /* --------------------------------------------------
+  営業案内
+  -------------------------------------------------- */
+  /* 入場料（テーブル） */
+  .price-table {
+    
+  }
+  /* <th>と<td>に対する指定 */
+  .price-table th, .price-table td {
+    
+  }
+  /* --------------------------------------------------
+  お問い合わせフォーム
+  -------------------------------------------------- */
+  /* フォームの3つのブロックに対する指定 */
+  .form-group {
+    /* flexbox（横並びにする要素の親に指定） */
+    
+    
+    /* 横幅の最大値 */
+    margin-bottom: 10px;
+  }
+  /* 項目名に対する指定 */
+  .form-label {
+    /* フレックスアイテムに対する指定 */
+    
+    
+    margin: 0;
+    padding-top: 5px;
+  }
+  /* 入力欄を囲む<div>に対する指定 */
+  .form-col {
+    /* フレックスアイテムに対する指定 */
+    
+  }
+}
+/* --------------------------------------------------
+  幅768px以上のスタイル指定 ここまで
+  -------------------------------------------------- */

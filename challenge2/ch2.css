@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*----------------------------
+全体の初期設定
+----------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: HGS明朝E;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 40px;
+}
+.wrapper {
+  background: #f9f8ee;
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*----------------------------
+header
+----------------------------*/
+header { margin-bottom: 60px; }
+h1 { margin-bottom: 20px; }
+ul { background: #fff; }
+a {
+  display: block;
+  color: #196f6a;
+  text-decoration: none;
+  padding: 10px;
+}
+a:hover { background: #e4e3d6; }
+
+/*----------------------------
+main
+----------------------------*/
+main {
+  color: #504643;
+  margin-bottom: 40px;
+}
+h2 { margin-bottom: 20px; }
+p { margin-bottom: 1em; }
+em {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #196f6a;
+}
+
+/*----------------------------
+この下に、CSSの指定を記述していきましょう。
+----------------------------*/

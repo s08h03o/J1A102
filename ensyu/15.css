@@ -1,0 +1,31 @@
+@charset "UTF-8";
+h1 {
+  font-size: 15px;
+  margin: 30px 0 5px;
+}
+p {
+  background: #60bfaa;
+  width: 37px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+}
+/*ここから */
+
+/* 4辺とも20px */
+
+/* 上下20px・左右5px */
+
+/* 上5px・左右40px・下20px */
+
+/* 上5px・右40px・下20px・左5px（上から時計回り） */
+
+/* 4辺とも20px */
+
+/* 上下20px・左右5px */
+
+/* 上10px・左右auto・下20px */
+
+/* 上5px・右40px・下20px・左5px（上から時計回り） */
+
+/*ここまで */

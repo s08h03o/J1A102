@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* h1要素に対する指定 */
+h1 {
+  font-size: 18px;
+  margin: 20px 0 5px;
+}
+/* p要素に対する指定 */
+p {
+  margin: 0;
+  line-height: 1;
+}
+/*ここから*/
+/* span要素に対する指定 */
+
+/* displayをそれぞれ指定 */
+
+/*ここまで*/

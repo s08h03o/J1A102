@@ -1,0 +1,61 @@
+@charset "UTF-8";
+div.solid, div.dotted, div.dashed, div.double {
+  display: inline-block;
+  background-color: #eee;
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 20px 40px;
+  border-width: 6px;
+  border-color: #f00;
+}
+/*ここから */
+div.solid {}
+
+div.dotted {}
+
+div.dashed {}
+
+div.double {}
+/*ここまで */
+p {
+  text-align: center;
+  margin: 40px 0;
+}
+.first p {
+  box-sizing: border-box;
+  width: 160px;
+  padding: 6px;
+  /*ここから */
+
+  /*ここまで */
+}
+.second p {
+  width: 220px;
+  padding: 6px;
+  line-height: 1;
+  margin: 40px 10px;
+  box-sizing: border-box;
+}
+/*ここから */
+/* 左辺・下辺のみ */
+p.leftBottom {}
+
+/* 上下に二重線 */
+p.TopBottom {}
+
+/* 1辺ずつ色を変える */
+p.fourColors {}
+/*ここまで */
+.third p {
+  box-sizing: border-box;
+  line-height: 1.2;
+  background: #eee;
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+}
+/*ここから */
+p.kadomaru1 {}
+
+p.kadomaru2 {}
+/*ここまで */

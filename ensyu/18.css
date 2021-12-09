@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 360px;
+  background: #eee;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.item1, .item2, .item3 {
+  color: #fff;
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  margin: 0;
+}
+.item1 {
+  background: #ef9f00;
+}
+.item2 {
+  background: #60bfaa;
+}
+.item3 {
+  background: #33479c;
+}
+/*ここから*/
+
+/*ここまで*/

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+h1 {
+  background-color: whitesmoke;
+  margin: 0;
+}
+section {
+  width: 100%;
+  padding: 10px;
+  background: #fcc;
+}
+/* positionを使った指定 */
+.first img {
+  /*ここから*/
+
+  /*ここまで*/
+}
+section.second {
+  /*ここから*/
+
+  /*ここまで*/
+  margin-bottom: 200px;
+}
+/*ここから*/
+/* positionを使った指定 */
+.second img {}
+
+/* positionを使った指定 */
+.pagetop {}
+
+/*ここまで*/

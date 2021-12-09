@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ボックスモデル、幅と高さ</title>
+    <link rel="stylesheet" href="14.css" />
+  </head>
+  <body>
+    <div class="first">
+      <p class="content"> box-sizing:content-box;<br /> 要素の幅が300pxで、その外側にpadding, border, marginがつきます。 </p>
+      <p class="border"> box-sizing:border-box;<br /> 要素, padding, border,までが300pxで、その外側にmarginがつきます。 </p>
+    </div>
+    <div class="second">
+      <p class="parent">親要素<br />W100% H指定なし</p>
+      <p class="px">100px × 100px</p>
+      <p class="per">50% × 50%</p>
+    </div>
+    <div class="third">
+      <p class="hamidasu"> 横幅の広いデバイスで見たときは収まっていても、横幅の狭いデバイスでは1行に入る文字数が少なくなり、行送り（折返し）の回数が増えるので、高さを指定してしまうとはみ出してしまう事があります。
+      </p>
+      <p class="hamidasanai">
+        横幅の広いデバイスで見たときは収まっている。仮に横幅の狭いデバイスで1行に入る文字数が少なくなり、行送り（折返し）の回数が増えたとしても、高さをautoに指定しておけば、はみ出すことはない。 </p>
+    </div>
+    <!-- 試しにブラウザのウィンドウ幅を左右に広げたり、縮めたりしてみてください。-->
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+* {
+    /* ここにGoogle Fontsのfont-family */
+}
+p.gothic {
+    font-family: YuGothic, "ヒラギノ角ゴ ProN W3", メイリオ, sans-serif;
+}
+p.mincho {
+    font-family: YuMincho, "ヒラギノ明朝 ProN", HGS明朝E, serif;
+}
