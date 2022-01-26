@@ -56,10 +56,11 @@ address {
 .header {
   
   /* メニューボタンの絶対配置の基準となる */
+  position:relative
   padding: 15px 0 0;
-  background-color: #fff;
+  background-color:#fff;
 }
-/* ロゴ */
+/* ロゴ *
 .logo {
   width: 140px;
   margin: 0 auto;
@@ -73,11 +74,11 @@ address {
   「display: none;」で非表示にしている。
   -------------------- */
 .nav-toggle {
-  
+  display: none;
 }
 /* ハンバーガーボタン */
 .btn-burger {
-  
+  position: absolute;
   /* 親要素（.header）を基準に絶対配置 */
   top: 5px;
   right: 10px;
@@ -94,7 +95,7 @@ address {
 }
 /* メニューが開いたときの、ハンバーガーボタンの画像を指定 */
 .nav-toggle:checked~.btn-burger {
-  
+  background: url(img/close.svg) center center /26px 26px no-repeat;
 }
 /* ナビゲーション */
 .nav {
@@ -102,7 +103,7 @@ address {
   background: url("../img/nav_bg.png") center center / cover no-repeat;
 }
 .nav-list {
-  
+  display: none;
   /* 最初はメニュー（ul要素）を非表示にしておく指定 */
   margin: 0;
   padding-bottom: 10px;
@@ -118,7 +119,7 @@ address {
 }
 /* メニューが開いたとき、<ul>を表示する */
 .nav-toggle:checked~.nav .nav-list {
-  
+  display: block;
 }
 /* ----------ナビゲーションのスタイル指定 ここまで---------- */
 
