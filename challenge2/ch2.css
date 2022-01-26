@@ -5,12 +5,12 @@
 ----------------------------*/
 * {
   box-sizing: border-box;
-  font-family: HGS明朝E;
+  font-family:'Yomogi', cursive;
   margin: 0;
 }
 body {
   margin: 0;
-  padding: 40px;
+  padding: 40px;;
 }
 .wrapper {
   background: #f9f8ee;
@@ -52,3 +52,16 @@ em {
 /*----------------------------
 この下に、CSSの指定を記述していきましょう。
 ----------------------------*/
+body{
+  background: url(/challenge2/wood.jpg) #504643 left top repeat;
+  text-align: center;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li{
+  flex: 1 1 20%;
+}
