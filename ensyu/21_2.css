@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+}
+.globalNav {
+    width: 100%;
+    margin-top: 20px;
+    background: #333;
+}
+.globalNav ul {
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.navItem {
+    border-left: 1px solid #999;
+    text-align: center;
+    flex: 0 1 22%;
+}
+.navItem:last-of-type {
+    border-right: 1px solid #999;
+}
+.navItem a {
+    display: block;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+}
+.globalNav1 ul {
+    list-style: square;
+}
+.globalNav2 ul {
+    list-style: url(img/arrow2.png);
+}

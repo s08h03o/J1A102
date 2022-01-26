@@ -1,0 +1,33 @@
+@charset "UTF-8";
+*{
+    color:#00f;
+    font-size: 16px;
+}
+h1{
+    background-color:#ff0;
+    font-size: 50px;
+}
+div p{
+background-color:#eee;
+}
+h1,a{
+    color:#f00;
+}
+li.colorRed{
+    color:#f00;
+}
+li.colorBlue{
+    color:#00f;
+}
+input[type="text"] {
+    background-color: #eee;
+}
+#red{
+    color:#f00;
+}
+.blue{
+    color:#00f;
+}
+p {
+    color: #666;
+}

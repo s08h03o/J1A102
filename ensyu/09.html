@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>セレクタと適用ルール</title>
+    <link rel="stylesheet" href="09.css" />
+    <style>
+      p{
+        color:#f0f;
+      }
+    </style>
   </head>
   <body>
     <h1>猫の性格</h1>
     <div>
-      <p>茶トラ猫は穏やかでフレンドリー</p>
+      <p style="color:#0f0">茶トラ猫は穏やかでフレンドリー</p>
       <p>黒猫は甘えん坊で好奇心旺盛</p>
       <p>三毛猫は好き嫌いがはっきりしている</p>
     </div>
     <p>猫種や環境によっても違いはあります。</p>
     <a href="#">もっと詳しく→</a>
     <ul>
-      <li>idとclassで指定</li>
-      <li>classで指定</li>
-      <li>classで指定</li>
+      <li id="colorRed" class="colorBlue">idとclassで指定</li>
+      <li class ="colorBlue">classで指定</li>
+      <li class ="colorBlue">classで指定</li>
       <li>id/classなし</li>
     </ul>
-    <p>何色になるでしょうか</p>
+    <p id="red" class="blue">何色になるでしょうか</p>
   </body>
 </html>

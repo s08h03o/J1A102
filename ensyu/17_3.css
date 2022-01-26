@@ -8,18 +8,18 @@ div {
   padding: 5px;
   float: left;
   /*ここから */
-
+background: url(img/bg_cat.png)right bottom no-repeat;
   /*ここまで */
 }
 /*ここから */
 /* background-sizeをそれぞれ指定 */
-.px {}
+.px {background-size: 150px 50px;}
 
-.per {}
+.per {background-size:  50% 50%;}
 
-.cover {}
+.cover {background-size: cover;}
 
-.contain {}
+.contain {background-size: contain;}
 /*ここまで */
 /* p要素のマージンを指定 */
 p {

@@ -11,7 +11,25 @@ p {
 }
 /*ここから*/
 /* span要素に対する指定 */
-
+span{
+  background:#60bfaa;
+  color: #fff;
+  padding: 5px;
+  width: 60px;
+  margin-bottom: 4px;
+  text-align: center;
+}
 /* displayをそれぞれ指定 */
-
+.inline span{
+  display: inline;
+}
+.block span{
+  display: block;
+}
+.inline-block span{
+  display: inline-block;;
+}
+.none span{
+  display: none;
+}
 /*ここまで*/

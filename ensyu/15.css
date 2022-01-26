@@ -11,21 +11,54 @@ p {
   line-height: 1;
 }
 /*ここから */
+.first p{
+  text-align: center;
+  width: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.second p{
+  margin: 0;
+}
+p.padding0{
+  padding: 0;
+}
 
-/* 4辺とも20px */
-
+/* 4辺{とも20px */
+*p.padding1{
+  padding: 20px;
+}
 /* 上下20px・左右5px */
-
+p.padding2{
+  padding: 20px 5px;
+}
 /* 上5px・左右40px・下20px */
-
+p.padding3{
+  padding: 5px 40px 20px;
+}
 /* 上5px・右40px・下20px・左5px（上から時計回り） */
-
+p.padding4{
+  padding: 5px 40px 20px 5px;
+}
+.third p{
+  padding: 10px 15px;
+}
 /* 4辺とも20px */
-
+p.margin1{
+  margin: 20px;
+}
 /* 上下20px・左右5px */
-
+p.margin2{
+  margin: 20px 5px;
+}
 /* 上10px・左右auto・下20px */
-
+p.margin3{
+  margin: 10px auto 20px;
+}
 /* 上5px・右40px・下20px・左5px（上から時計回り） */
-
+p.margin4{
+  margin: 5px 40px 20px 5px;
+}
 /*ここまで */

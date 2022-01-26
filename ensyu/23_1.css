@@ -15,5 +15,41 @@ p {
   font-size: 16px;
 }
 /*ここから*/
+p::before{
+  content:"■";
+  margin-right: 4px;
+  color: #ef626e;
+}
 
+input[type="text"],select,
+textarea{
+  background: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.job{
+  margin-right: 2em;
+}
+
+select{
+  height:40px;
+  font-size: 14px;
+}
+
+textarea{
+  height: 8em;
+}
+
+input[type="submit"]{
+  background:#ef626c;
+  border:none;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  color: #fff;
+}
 /*ここまで*/

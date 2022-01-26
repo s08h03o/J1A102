@@ -14,20 +14,30 @@ section {
 /* positionを使った指定 */
 .first img {
   /*ここから*/
-
+position: relative;
+top: 40px
+left 100px;
   /*ここまで*/
 }
 section.second {
   /*ここから*/
-
+position: relative;
   /*ここまで*/
   margin-bottom: 200px;
 }
 /*ここから*/
 /* positionを使った指定 */
-.second img {}
+.second img {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
 
 /* positionを使った指定 */
-.pagetop {}
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
 /*ここまで*/

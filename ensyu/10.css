@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+p{
+    background-color: #eee;
+    width: 360px;
+    height: 100px;
+}
+span{
+ background-color: #00f;
+ color: #fff;
+ width: 180px;
+ height: 50px;   
+}
+.blue{
+    color:blue;
+}
+.pink{
+    color: #f0c;
+}
+.bg{
+    background-color: #ff0;
+}
+.marker{
+    background-color: #f0c;
+}

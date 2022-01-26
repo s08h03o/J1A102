@@ -1,0 +1,42 @@
+@charset "UTF-8";
+a.first{
+    color: #f0c;
+    text-decoration:none;
+    background-color: #fff;
+    transition: background-color 1s;
+}
+a.first:hover{
+    background-color: #ffa;
+}
+a.second{
+    color:#00f;
+    line-height: 2;
+}
+a.second:link{color: #00f;}
+a.second:visited{color: #90a;}
+a.second:hover{
+    background-color: #ff0;
+}
+a.second:active{
+    background-color: #dd0;
+}
+a.second:focus{
+    outline: none;
+    border: 4px solid #ff0;
+}
+li:nth-of-type(odd){
+    background-color: #0c0;
+}
+li:nth-of-type(even){
+    background-color: #ccc;
+}
+h3::before{content: "★";}
+a.third::after{
+    content:url(img/arrow.png);
+}
+p.letter::first-letter{
+    font-size: 2em;
+}
+p.line::first-line{
+    color:#f0f;
+}

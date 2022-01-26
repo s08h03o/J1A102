@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /*ここから */
-
+*{
+  box-sizing: border-box;
+}
+.content{
+  box-sizing: content-box;
+}
+.first p{
+  width: 300px;
+  padding: 20px;
+  border: 6px solid #00f;
+  margin: 30px auto;
+  background-color: #eee;
+  text-align: center;
+}
+.first p::first-line{
+  font-weight: bold;
+  font-size: 1.2em;
+}
 /*ここまで */
 .second {
   background-color: #ffc;
@@ -10,7 +27,15 @@
   color: #fff;
 }
 /*ここから */
-
+.px{
+  width: 100px;
+  height: 100px;
+}
+.per{
+  width: 50%;
+  height: 50%
+  ;
+}
 /*ここまで */
 p.parent {
   background-color: transparent;
@@ -29,5 +54,10 @@ p.parent {
   background: #ffc;
 }
 /*ここから */
-
+p.hamidasu{
+  height: 100px;
+}
+p.hamidasanai{
+  height: auto;
+}
 /*ここまで */
