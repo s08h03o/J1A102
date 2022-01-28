@@ -16,21 +16,23 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-    <h1>
+    <header class="header">
+    <h1 class="logo">
       <img src="img/logo.svg" alt="Cornetto">
     </h1>
     </header>
     
     <!-- <main>の中身をマークアップ -->
-    <main>
-    <figure>
-    <img src="img/top.jpg" alt="Cornettoのパン">
+    <main class="main">
+    <figure class="top center slide" id="top">
+      <img src="img/top_01.jpg" alt="Cornettoのパン1" />
+      <img src="img/top_02.jpg" alt="Cornettoのパン2" />
+      <img src="img/top_03.jpg" alt="Cornettoのパン3" />
+      <img src="img/top_01.jpg" alt="Cornettoのパン1" />
     </figure>
     
-    <nav>
-    （ナビゲーション）
-    <ul>
+    <nav class="nav">
+    <ul class="nav-list">
       <li><a href="#about">about</a></li>
       <li><a href="#menu">menu</a></li>
       <li><a href="#photos">photos</a></li>
@@ -38,8 +40,8 @@
     </ul>
     </nav>
     
-    <section>
-    <h2>
+    <section class="section about" id="about">
+    <h2 class="heading">
       <img src="img/ttl_about.svg" alt="about">
     </h2>
     <p>Cornettoは東京都中区にあるパン屋です。<br>
@@ -49,22 +51,21 @@
     ぜひご賞味ください。</p>
     </section>
     
-    <section id="menu">
-    （メニュー）
-    <h2>
+    <section class="section menu" id="menu">
+    <h2 class="heading">
       <img src="img/ttl_menu.svg" alt="menu">
     </h2>
-    <ul>
-    <li>・クロワッサン・・・ 140円</li>
-    <li>・ベーグル・・・ 180円</li>
-    <li>・ピザパン・・・ 180円</li>
-    <li>・あんぱん・・・ 150円</li>
-    <li>・食パン・・・ 450円</li>
+    <ul class="menu-list">
+    <li>クロワッサン・・・ 140円</li>
+    <li>ベーグル・・・ 180円</li>
+    <li>ピザパン・・・ 180円</li>
+    <li>あんぱん・・・ 150円</li>
+    <li>食パン・・・ 450円</li>
   </ul>
     </section>
     
-    <section id="photos">
-    <h2>
+    <section class="section photos" classid="photos">
+    <h2 class="heading">
       <img src="img/ttl_photos.svg" alt="photos">
     </h2>
     <ul>
@@ -89,36 +90,40 @@
   </ul>
     </section>
     
-    <section id="access">
-      <h2>
+    <section class="section access" id="access">
+      <h2 class="heading">
         <img src="img/ttl_access.svg" alt="access">
       </h2>
-      <div>
-      <address>
+      <div class="access-row">
+      <address class="access-address">
       <strong>Bakery shop Cornetto</strong><br>
     〒123-4567<br>
     東京都中区舟入中町4-40<br>
     <strong>TEL・FAX 012-345-6789</strong>
     </address>
-    <figure>
+    <figure class="access-map">
       <img src="img/map.png" alt="店舗周辺地図">
     </figure>
     </div>
     </section>
     
     </main>
-    
-    <footer>
-    （フッター）
-    ロゴ画像
-    
-    （フッターナビゲーション）
-    *about（リンク先：#about）
-    *menu（リンク先：#menu）
-    *photos（リンク先：#photos）
-    *access（リンク先：#access）
-    
-    &copy;Copyright 2019 MdN Corporation.
+    <a href="#top"><img class="pagetop" src="img/pagetop.png" alt="ページトップに戻る" width="60" height="60" /></a>
+    <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-logo"><img src="img/logo_w.svg" alt="Coronetto"></p>
+      <div class="footer-body"> 
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="#about">about</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#photos">photos</a></li>
+            <li><a href="#access">access</a></li>
+          </ul>
+        </nav>
+        <p><small>&copy;Copyright 2019 MdN Corporation.</small></p>
+      </div>
+    </div>
     </footer>
   </body>
 </html>

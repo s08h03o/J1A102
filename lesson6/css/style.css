@@ -15,6 +15,41 @@ body {
 }
 
 /* 各要素の初期スタイル調整 */
+h1,h2{
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+a{
+  color:#806342;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+ul{
+  margin: 1em 0;
+  padding: 0;
+  list-style:none;
+}
+
+figure{
+  margin: 0;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+address{
+  font-style: normal;
+}
 
 /* 初期スタイル調整ここまで */
 
@@ -25,50 +60,92 @@ body {
 
 /* ヘッダー */
 .header {
-   /* 横幅の指定 */
-   /* 左右中央揃え */
-   /* 上下・左右の内余白 */
+  width:1000px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 /* ロゴ */
 .logo {
-   /* 上下左右の外余白 */
-   /* テキスト中央揃え */
+  margin: 0;
+  text-align: center;
 }
 
 /* メイン */
-
+.main{
+  width: 1000px;
+  margin: 0 auto;
+}
 /* トップ（メインイメージ） */
-
+.top{
+  margin-bottom: 20px;
+  text-align: center;
+}
 /* ナビゲーション */
-
+.nav{
+  margin-bottom: 50px;
+  text-align: center;
+}
 /* ナビリスト */
+.nav-list li{
+  display:inline-block;
+  margin:0;
+  border-left: 1px solid #806342;
+}
 
+.nav-list li:first-child{
+  border-left:none;
+}
+
+.nav-list a{
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1.2;
+  text-transform:uppercase;
+}
 /* セクション */
-
-/* 見出し */
+.section{
+  margin:0 auto 80px;
+}
+/* 見出し */.heading{
+  margin-bottom: 40px;
+  text-align: center;
+}
 
 /* アバウト */
-
+.about{
+  text-align: center;
+}
 /* メニュー */
-
+.menu{
+  text-align: center;
+}
 
 /* メニューリスト */
 .menu-list {
-   /* ul要素の横幅を自動的に定めている */
-   /* 左のマージン */
-   /* リストの先頭にリストマーク（・）をつける */
-   /* テキスト左揃え */
+  display: inline-block;
+  margin-left: 30px;
+  list-style: disc;
+  text-align: left;
 }
 .menu-list li {
-   /* 下のマージン */
+    margin-bottom: 10px;
 }
 
 /* フォト */
+.photos{
+  width: 750;
+}
 
 
 /* フォトリスト */
+.photo-list li{
+  margin-bottom: 30px;
+}
 
+.photos figcaption{
+  font-size:12px;
+}
 
 /* アクセス */
 .access {
@@ -77,12 +154,15 @@ body {
 
 /* アクセス 左右横並び */
 .access-row {
-  /* flexbox（横並びにする要素の親に指定） */
-  
-  /* flexboxの中身を左右均等に配置する */
-  
-  /* flexboxの中身の上下を中央揃えにする */
-  
+  display: -webkit-box;
+  display: -ms-inline-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -98,8 +178,9 @@ body {
 
 /* 右側（フレックスアイテム） */
 .access-map {
-  /* フレックスアイテムへの指定 */
-  
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 295px;
+  flex: 0 1 295px;;
   max-width: 295px;
 }
 
@@ -113,24 +194,27 @@ body {
 
 /* フッターの中身 */
 .footer-container {
-  /* flexbox（横並びにする要素の親に指定） */
-  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 660px;
   margin: 0 auto;
 }
 
 /* フッターロゴ（左側） */
 .footer-logo {
-  /* フレックスアイテムへの指定 */
-  
+  -webkit-box-flex: 0;
+  -ms-flex:0 1 200px;
+  flex:0 1 200px;
   max-width: 200px;
   margin: 0;
 }
 
 /* フッター その他要素（右側） */
 .footer-body {
-  /* フレックスアイテムへの指定 */
-  
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex:0 1 auto;
   padding-top: 20px;
 }
 
@@ -173,3 +257,8 @@ body {
 /* トップ画像をスライド */
 
 /* トップに戻るボタンを右下に固定 */
+.pagetop{
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+}
