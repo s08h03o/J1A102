@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+body {
+    background: #ddd;
+}
+form {
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+}
+dl {
+    margin: 0;
+    font-size: 16px;
+}
+.formltem {
+    display: flex;
+    margin-bottom: 2em;
+    align-items: center;
+}
+dt {
+    flex: 1 1 30px;
+    text-align: right;
+    margin-right: 1em;
+    font-weight: bold;
+    color: #00a;
+}
+dd {
+    flex: 2 1 30px;
+    margin-left: 0;
+}
+input[type="text"], textarea {
+    border: 1px solid #999;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.job {
+    margin-right: 8em;
+}
+select {
+    background: #fff;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+textarea {
+    height: 5em;
+}
+.btn {
+    text-align: center;
+}
+input[type="submit"] {
+    background: #00a;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+    .formltem {
+        display: block;
+    }
+    dt {
+        text-align: left;
+        margin-bottom: 4px;
+    }
+    dd {
+        margin-left: 0;
+    }
+    .job {
+        margin-right: 8em;
+    }
+}
